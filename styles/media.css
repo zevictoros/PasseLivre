@@ -1,0 +1,46 @@
+@media screen and (max-width: 20000px){
+    
+    main{
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 38px;
+    }
+
+    input{
+        align-self: center;
+    }
+
+    ul{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1040px){
+    img{
+        display: none;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+}
+
+@media screen and (min-width: 1040px){
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1040px;
+        margin: auto;
+    }
+}

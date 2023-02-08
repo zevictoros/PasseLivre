@@ -1,0 +1,109 @@
+body{
+    background-color: rgb(34, 34, 34);
+    color: rgb(170, 164, 180);
+    font-family: poppinsregular;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: white;
+  transition: 0.3s;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.bi {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.bi-moon {
+  display: none;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: rgb(170, 164, 180);
+}
+
+a:hover{
+    color: #ffb43a;
+    transition: 0.3s all;
+}
+
+#inscreva-se-btn{
+    border: 2px solid  #ffb43a;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#inscreva-se-btn:hover{
+    background-color: #ffb43a;
+    color: white;
+}
+
+h1{
+    font-weight: 120;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+}
+
+h2{
+    font-size: 50px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+}
+
+span{
+    color:  #ffb43a;
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+img{
+    width: 550px;
+}
+
+.btnEditar img{
+  max-width: 20px;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
