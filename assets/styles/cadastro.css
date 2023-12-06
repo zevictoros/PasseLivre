@@ -1,0 +1,48 @@
+.motoristas-cadastrados h2 {
+  font-size: 14px;
+  color: #52545b;
+  padding-bottom: 1.5em;
+}
+
+.cadastro {
+  margin: 3em auto;
+}
+
+.btn-primary {
+  color: #333;
+  background-color: #ffb43a;
+  font-size: 11px;
+}
+
+.btn-secondary {
+  font-size: 11px;
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  border-width: 2px;
+}
+
+.btn-primary:hover {
+  color: #333;
+  background-color: #ffb43a;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #ffb43a !important;
+  color: #333 !important;
+}
+
+.motoristas-cadastrados {
+  margin: 5em auto;
+}
+
+.btnEditar {
+  border: 0;
+  width: 25px;
+  background: none;
+}

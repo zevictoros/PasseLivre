@@ -1,32 +1,13 @@
-@media screen and (max-width: 20000px){
-    
-    main{
-        flex-direction: column;
-    }
-
-    h2{
-        font-size: 38px;
-    }
-
-    input{
-        align-self: center;
-    }
-
-    ul{
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 1040px){
-    img{
+@media screen and (max-width: 1040px) {
+    img {
         display: none;
     }
 
-    header{
+    header {
         flex-direction: column;
     }
 
-    main{
+    main {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -35,12 +16,45 @@
 
 }
 
-@media screen and (min-width: 1040px){
-    main{
+@media screen and (min-width: 1040px) {
+    main {
         display: flex;
         justify-content: center;
         align-items: center;
         max-width: 1040px;
         margin: auto;
+    }
+}
+
+
+@media (min-width: 700px) {
+    .titulo h1 {
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 900px) {
+    .titulo h1 {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 641px) {
+    .motoristas-cadastrados h2 {
+        text-align: left !important;
+    }
+}
+
+@media (min-width: 500px) {
+    .btn-primary {
+        font-size: 14px;
+    }
+
+    .btn-secondary {
+        font-size: 14px;
+    }
+
+    .titulo h1 {
+        font-size: 30px;
     }
 }

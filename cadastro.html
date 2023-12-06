@@ -1,203 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"/>
-    <link type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.21/r-2.2.5/datatables.min.css" rel="stylesheet"/>
-    <link href="assets/styles/estilo.css" rel="stylesheet"/>
-    <link href="assets/styles/style.css" rel="stylesheet"/>
-    <link href="assets/styles/fonts.css" rel="stylesheet">
-    <link href="assets/styles/media.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" rel="stylesheet"/>
-    <script src="js/script.js" defer></script>
-    <link href="assets/styles/style.css" rel="stylesheet">
 
-    <title>Passe Livre</title>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.21/r-2.2.5/datatables.min.css"
+    rel="stylesheet" />
+  <link href="assets/styles/cadastro.css" rel="stylesheet" />
+  <link href="assets/styles/style.css" rel="stylesheet" />
+  <link href="assets/styles/fonts.css" rel="stylesheet">
+  <link href="assets/styles/media.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <script src="js/script.js" defer></script>
+  <link href="assets/styles/style.css" rel="stylesheet">
 
-  <body>
-    <header>
-      <div id="title">
-          <h1>Passe</h1>
-          <h1>Livre</h1>
-      </div>
-      <ul>
-          <a href="index.html"><li>Início</li></a>
-          <a href="#"><li>Serviços</li></a>
-          <a href="#"><li>Sobre</li></a>
-          <a href="#"><li>Contato</li></a>
-          <a href="cadastro.html" id="inscreva-se-btn"><li>Cadastrar-se</li></a>
-      </ul>
+  <title>Passe Livre</title>
+</head>
+
+<body>
+  <header>
+    <div id="title">
+      <h1>Passe</h1>
+      <h1>Livre</h1>
+    </div>
+    <ul>
+      <a href="index.html">
+        <li>Início</li>
+      </a>
+      <a href="#">
+        <li>Serviços</li>
+      </a>
+      <a href="#">
+        <li>Sobre</li>
+      </a>
+      <a href="#">
+        <li>Contato</li>
+      </a>
+      <a href="cadastro.html" id="inscreva-se-btn">
+        <li>Cadastrar-se</li>
+      </a>
+    </ul>
   </header>
 
-    <div class="container text-center titulo">
-      <h1 class="font-weight-bold">CADASTRO DE MOTORISTAS</h1>
-    </div>
-    
-    <section class="container text-center cadastro">
-      <button
-        type="button"
-        class="btn btn-primary botao-modal"
-        id="btnCadastro">
-        CADASTRAR NOVO MOTORISTA
-      </button>
+  <div class="container text-center titulo">
+    <h1 class="font-weight-bold">CADASTRO DE MOTORISTAS</h1>
+  </div>
 
-      <div
-        class="modal fade"
-        id="modalCentro"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="TituloModalCentralizado"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="TituloModalCentralizado">
-                CADASTRO DO MOTORISTA
-              </h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Fechar">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form id="cadastroForm" novalidate>
-                <div class="row">
-                  <div class="form-group col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="nome"
-                      placeholder="Nome"/>
-                  </div>
+  <section class="container text-center cadastro">
+    <button type="button" class="btn btn-primary botao-modal" id="btnCadastro">
+      CADASTRAR NOVO MOTORISTA
+    </button>
+
+    <div class="modal fade" id="modalCentro" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">
+              CADASTRO DO MOTORISTA
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="cadastroForm" novalidate>
+              <div class="row">
+                <div class="form-group col">
+                  <input type="text" class="form-control" id="nome" placeholder="Nome" />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <input type="text" class="form-control" id="telefone" placeholder="Telefone" />
                 </div>
 
-                <div class="row">
-                  <div class="form-group col-sm-6">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="telefone"
-                      placeholder="Telefone"/>
-                  </div>
-
-                  <div class="form-group col-sm-6">
-                    <input
-                      type="date"
-                      class="form-control"
-                      id="dataNascimento"
-                      placeholder="Data de Nascimento"/>
-                  </div>
+                <div class="form-group col-sm-6">
+                  <input type="date" class="form-control" id="dataNascimento" placeholder="Data de Nascimento" />
                 </div>
+              </div>
 
-                <div class="row">
-                  <div class="form-group col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="cnh"
-                      placeholder="CNH"
-                      maxlength="11"/>
-                  </div>
-                  <div class="form-group col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="cnhTipo"
-                      placeholder="Tipo da CNH"/>
-                  </div>
+              <div class="row">
+                <div class="form-group col">
+                  <input type="text" class="form-control" id="cnh" placeholder="CNH" maxlength="11" />
                 </div>
-
-                <div class="row">
-                  <div class="form-group col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="cpf"
-                      placeholder="CPF"
-                      maxlength="14"/>
-                  </div>
-                  <div class="form-group col">
-                    <select class="custom-select mr-sm-2" id="situacao">
-                      <option selected value="">Situação</option>
-                      <option value="true">Ativo</option>
-                      <option value="false">Inativo</option>
-                    </select>
-                  </div>
+                <div class="form-group col">
+                  <input type="text" class="form-control" id="cnhTipo" placeholder="Tipo da CNH" />
                 </div>
+              </div>
 
-                <input type="hidden" id="motoristaID" name="motoristaID" />
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal">
-                CANCELAR
-              </button>
-              <button type="submit" class="btn btn-primary" id="botaoSalvar">
-                SALVAR
-              </button>
-            </div>
+              <div class="row">
+                <div class="form-group col">
+                  <input type="text" class="form-control" id="cpf" placeholder="CPF" maxlength="14" />
+                </div>
+                <div class="form-group col">
+                  <select class="custom-select mr-sm-2" id="situacao">
+                    <option selected value="">Situação</option>
+                    <option value="true">Ativo</option>
+                    <option value="false">Inativo</option>
+                  </select>
+                </div>
+              </div>
+
+              <input type="hidden" id="motoristaID" name="motoristaID" />
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+              CANCELAR
+            </button>
+            <button type="submit" class="btn btn-primary" id="botaoSalvar">
+              SALVAR
+            </button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="container motoristas-cadastrados">
-      <h2 class="text-center">MOTORISTAS CADASTRADOS</h2>
-      <div class="table-responsive">
-        <table class="table" id="tabelaMotoristas">
-          <thead>
-            <tr>
-              <th>Nome</th>
-              <th>Telefone</th>
-              <th>Data de Nascimento</th>
-              <th>CNH</th>
-              <th>CPF</th>
-              <th>Tipo da CNH</th>
-              <th>Situação</th>
-              <th>Editar</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
-    </section>
+  <section class="container motoristas-cadastrados">
+    <h2 class="text-center">MOTORISTAS CADASTRADOS</h2>
+    <div class="table-responsive">
+      <table class="table" id="tabelaMotoristas">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Data de Nascimento</th>
+            <th>CNH</th>
+            <th>CPF</th>
+            <th>Tipo da CNH</th>
+            <th>Situação</th>
+            <th>Editar</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </section>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
     </script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
-    <script
-      type="text/javascript"
-      src="https://cdn.datatables.net/v/bs4/dt-1.10.21/r-2.2.5/datatables.min.js">
-    </script>
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.21/r-2.2.5/datatables.min.js">
+  </script>
 
-    <script src="js/dataTable.pt-BR.min.js"></script>
-    <script src="./js/store.js"></script>
-    <script src="./js/scripts.js"></script>
-  </body>
+  <script src="js/dataTable.pt-BR.min.js"></script>
+  <script src="./js/store.js"></script>
+  <script src="./js/scripts.js"></script>
+</body>
+
 </html>
